@@ -344,14 +344,16 @@ end()
 {
         echo
         read -p "Mais alguma coisa? (Y/n)" YN
-        if [ "$NUM" == "n" ];
+        if [ "$YN" == "n" ];
+	then
                 echo "Beleza, valeu!"; exit 1;
-        elif [ "$NUM" == "N" ];
+        elif [ "$YN" == "N" ];
                 echo "Beleza, valeu!"; exit 1;
-        elif [ "$NUM" == "nao" ];
+        elif [ "$YN" == "nao" ];
                 echo "Beleza, valeu!"; exit 1;
         else
                 echo "Voltando"
+	fi
 }
 
 ##################
